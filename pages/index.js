@@ -1,118 +1,754 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Footer from '@/components/Footer';
+import Nav from '@/components/Nav';
+import Head from 'next/head';
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+const index = () => {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+    <>
+      <Head>
+        <title>Hyperlink School - Get Job-Ready with IT Courses</title>
+        <meta
+          name='title'
+          content='Hyperlink School — Get Job-Ready with IT Courses'
+        />
+        <meta
+          name='description'
+          content='Switch to High Paying IT Jobs, Learn the High Paying Skills of Tomorrow! No Software/IT background required'
+        />
+        <link
+          rel='canonical'
+          href='https://hyperlinkschool.com'
+        />
+
+        <meta
+          property='og:type'
+          content='website'
+        />
+        <meta
+          property='og:url'
+          content='https://hyperlinkschool.com'
+        />
+        <meta
+          property='og:title'
+          content='Hyperlink School — Get Job-Ready with IT Courses'
+        />
+        <meta
+          property='og:description'
+          content='Switch to High Paying IT Jobs, Learn the High Paying Skills of Tomorrow! No Software/IT background required'
+        />
+        <meta
+          property='og:image'
+          content='https://hyperlinkschool.com/cover.png'
+        />
+
+        <meta
+          property='twitter:card'
+          content='summary_large_image'
+        />
+        <meta
+          property='twitter:url'
+          content='https://hyperlinkschool.com'
+        />
+        <meta
+          property='twitter:title'
+          content='Hyperlink School — Get Job-Ready with IT Courses'
+        />
+        <meta
+          property='twitter:description'
+          content='Switch to High Paying IT Jobs, Learn the High Paying Skills of Tomorrow! No Software/IT background required'
+        />
+        <meta
+          property='twitter:image'
+          content='https://hyperlinkschool.com/digital-marketing-social.png'
+        />
+        <link
+          rel='icon'
+          href='https://hyperlinkschool.com/favicon.png'
+        />
+
+        <meta
+          name='google-site-verification'
+          content='eOAAT8a829VDP-xyjZDHDe9iwtv2R0A8eUpzE75L8G0'
+        />
+      </Head>
+
+      <section className='m-auto  max-w-6xl flex flex-col text-gray-700'>
+        <Nav />
+      </section>
+      <section className='bg-gradient-to-t from-blue-300  to-blue-100'>
+        <div className=' m-auto flex flex-col-reverse md:flex-row max-w-6xl w-full items-center p-4 pb-24 md:pt-20'>
+          <div className='flex flex-col md:w-[50%] gap-5 mt-10 md:mt-0'>
+            <div className='text-xs rounded-full font-bold bg-white border text-black  w-fit p-2 px-3'>
+              Switch to High Paying IT Jobs
+            </div>
+            <h2 className='text-4xl font-bold text-blue-600 leading-snug	'>
+              Learn the High Paying Skills of Tomorrow!
+            </h2>
+            <p className='text-sm'>No Software/IT background required.</p>
+
+            <a
+              href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
+              target='_blank'
+              className='flex cursor-pointer w-fit items-center text-sm gap-1 justify-around rounded-md bg-blue-500 hover:bg-blue-600 p-2.5 px-4 text-white shadow-sm'>
+              <span className='font-bold'>FREE MASTERCLASS</span>
+              <img
+                src='/right.svg'
+                className='w-4'
+              />
+            </a>
+          </div>
+
+          <div className='flex-grow md:w-[50%]'>
+            <img src='hero-2.png' />
+          </div>
+        </div>
+      </section>
+      <section className='m-4 sd:m-8 md:m-auto md:w-fit max-w-5xl flex gap-8 justify-center border shadow-md rounded-2xl p-10 relative bottom-12 bg-white'>
+        <div className='flex flex-col md:flex-row gap-8'>
+          <div>
+            <div className='text-4xl font-bold'>120+</div>
+            <div>Placements pan India</div>
+          </div>
+          <div>
+            <div className='text-4xl font-bold'>50%</div>
+            <div>Average Hike in Salary</div>
+          </div>
+        </div>
+        <div className='flex flex-col md:flex-row gap-8'>
+          <div>
+            <div className='text-4xl font-bold'>100+</div>
+            <div>Live Projects by Students</div>
+          </div>
+
+          <div>
+            <div className='text-4xl font-bold'>96%</div>
+            <div> Students Got Dream Job</div>
+          </div>
+        </div>
+      </section>
+
+      <section className='m-auto  max-w-6xl flex flex-col  p-4 text-gray-700 '>
+        <div className='flex flex-col gap-3 p-4 pb-10'>
+          <h2 className='text-3xl font-bold leading-snug	'>Our Courses</h2>
+          <h2 className='text-xl font-bold leading-snug	'>
+            Get Job-Ready with these IT Courses
+          </h2>
+        </div>
+        <section className='flex justify-around flex-wrap'>
+          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] p-4 mb-10'>
+            <img
+              src='app-icon.png'
+              className='w-32 mb-6'
             />
+            <p className='text-lg font-extrabold'>APP DEVELOPMENT</p>
+            <div>Complete App Development Mastery with React Native</div>
+            <ul className='flex flex-col gap-1'>
+              <li>✓ 24+ modules</li>
+              <li>✓ 3-4 months</li>
+              <li>✓ 5+ Live projects</li>
+              <li>✓ Andriod + iOS</li>
+              <li>✓ Job guarantee</li>
+            </ul>
+            <a
+              href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
+              target='_blank'
+              className='border-t pt-3 text-blue-500 font-bold'>
+              FREE MASTERCLASS
+            </a>
+          </div>
+          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] p-4 mb-10'>
+            <img
+              src='frontend-icon.png'
+              className='w-36 mb-6'
+            />
+            <p className='text-lg font-extrabold'>FRONTEND DEVELOPMENT</p>
+            <div>Complete App Development Mastery with React Native</div>
+            <ul className='flex flex-col gap-1'>
+              <li>✓ 24+ modules</li>
+              <li>✓ 3-4 months</li>
+              <li>✓ 5+ Live projects</li>
+              <li>✓ Andriod + iOS</li>
+              <li>✓ Job guarantee</li>
+            </ul>
+            <a
+              href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
+              target='_blank'
+              className='border-t pt-3 font-bold  text-blue-500'>
+              FREE MASTERCLASS
+            </a>
+          </div>
+          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] p-4 mb-10'>
+            <img
+              src='backend-icon.png'
+              className='w-36 mb-6'
+            />
+            <p className='text-lg font-extrabold'>BACKEND DEVELOPMENT</p>
+            <div>Complete App Development Mastery with React Native</div>
+            <ul className='flex flex-col gap-1'>
+              <li>✓ 24+ modules</li>
+              <li>✓ 3-4 months</li>
+              <li>✓ 5+ Live projects</li>
+              <li>✓ Andriod + iOS</li>
+              <li>✓ Job guarantee</li>
+            </ul>
+            <a
+              href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
+              target='_blank'
+              className='border-t pt-3 text-blue-500 font-bold'>
+              FREE MASTERCLASS
+            </a>
+          </div>
+          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] p-4 mb-10'>
+            <img
+              src='mern-icon.png'
+              className='w-52 mb-6'
+            />
+            <p className='text-lg font-extrabold'>FULl STACK DEVELOPMENT</p>
+            <div>Complete App Development Mastery with React Native</div>
+            <ul className='flex flex-col gap-1'>
+              <li>✓ 24+ modules</li>
+              <li>✓ 3-4 months</li>
+              <li>✓ 5+ Live projects</li>
+              <li>✓ Andriod + iOS</li>
+              <li>✓ Job guarantee</li>
+            </ul>
+            <a
+              href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
+              target='_blank'
+              className='border-t pt-3 text-blue-500 font-bold'>
+              FREE MASTERCLASS
+            </a>
+          </div>
+          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] p-4 mb-10'>
+            <img
+              src='wp-icon.png'
+              className='w-32 mb-6'
+            />
+            <p className='text-lg font-extrabold'>WORDPRESS DEVELOPMENT</p>
+            <div>Complete App Development Mastery with React Native</div>
+            <ul className='flex flex-col gap-1'>
+              <li>✓ 24+ modules</li>
+              <li>✓ 3-4 months</li>
+              <li>✓ 5+ Live projects</li>
+              <li>✓ Andriod + iOS</li>
+              <li>✓ Job guarantee</li>
+            </ul>
+            <a
+              href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
+              target='_blank'
+              className='border-t pt-3 text-blue-500 font-bold'>
+              FREE MASTERCLASS
+            </a>
+          </div>
+          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] p-4 mb-10'>
+            <img
+              src='dm-icon.png'
+              className='w-36 mb-6'
+            />
+            <p className='text-lg font-extrabold'>DIGITAL MARKETING</p>
+            <div>Complete App Development Mastery with React Native</div>
+            <ul className='flex flex-col gap-1'>
+              <li>✓ 24+ modules</li>
+              <li>✓ 3-4 months</li>
+              <li>✓ 5+ Live projects</li>
+              <li>✓ Andriod + iOS</li>
+              <li>✓ Job guarantee</li>
+            </ul>
+            <a
+              href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
+              target='_blank'
+              className='border-t pt-3 text-blue-500 font-bold'>
+              FREE MASTERCLASS
+            </a>
+          </div>
+        </section>
+
+        <section className='flex flex-col md:flex-row  w-full items-center border border-blue-500 shadow-md rounded-xl my-10'>
+          <div className='flex items-center w-full  p-4'>
+            <img src='free-masterclass.png' />
+          </div>
+          <div className='flex flex-col w-full gap-6 p-6'>
+            <img
+              src='free-class.png'
+              className='w-40'
+            />
+            <h2 className='text-2xl font-bold leading-snug	'>
+              Attend FREE MASTERCLASS and Learn Core Concepts Hours
+            </h2>
+            <p className='text-sm'>We run free masterclass's every Sunday!</p>
+
+            <a
+              href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
+              target='_blank'
+              className='flex cursor-pointer w-fit items-center gap-1 justify-around rounded-md bg-gray-700 hover:bg-gray-800 p-2.5 px-4 text-white shadow-sm'>
+              <span className='font-bold'>JOIN FREE MASTERCLASS</span>
+              <img
+                src='/right.svg'
+                className='w-4'
+              />
+            </a>
+          </div>
+        </section>
+
+        <section className='flex flex-col md:flex-row w-full items-center my-10'>
+          <div className='flex items-center w-full  p-4'>
+            <img
+              src='hsrp.png'
+              className='w-full md:w-3/4'
+            />
+          </div>
+          <div className='flex flex-col w-full gap-6 p-6'>
+            <img
+              src='icon.png'
+              className='hidden md:block md:w-20'
+            />
+            <h2 className='text-2xl font-bold leading-snug	'>
+              100% Job Guarantee, Otherwise 100% Money Back
+            </h2>
+            <p className='text-sm font-bold'>
+              Hyperlink School Technical Courses Refund Policy
+            </p>
+            <p>
+              Hyperlink School is committed to providing high-quality
+              educational services to our students. We understand that
+              occasionally circumstances may arise where a student may need to
+              request a refund. This policy outlines the conditions under which
+              a 100% refund may be granted. Click on the below button to read
+              the refund policy and eligibility.
+            </p>
+
+            <a
+              href='hyperlink-school-technical-courses-refund-policy.pdf'
+              target='_blank'
+              className='underline text-xs'>
+              View Refund Pocliy
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <div className=' w-full flex items-center justify-center mb-20'>
+        <div className=' m-4 flex max-w-4xl flex-col items-center text-center justify-center gap-4 rounded-3xl bg-blue-500 px-8 py-16 text-white'>
+          <div className='mt-4 text-3xl font-bold'>
+            Take a first step toward your dream career today!
+          </div>
+          <p className='max-w-lg text-center'>
+            Add skills that are valued globally and Switch to High Paying IT
+            Jobs
+          </p>
+          <a
+            href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
+            target='_blank'
+            className=' cursor-pointer w-fit font-bold gap-1  rounded-full border bg-white p-1.5 px-4 text-black '>
+            JOIN FREE MASTERCLASS
           </a>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className='relative overflow-x-hidden w-full flex-col justify-end gap-2 bg-gradient-to-t from-white via-blue-200 to-white px-2 flex'>
+        <div className='slide-track flex-row gap-2 bg-transparent flex'>
+          <img
+            src='icons/company-57.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-58.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-59.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-60.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-61.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-62.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-63.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-64.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-65.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-66.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-67.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-68.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-69.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-1.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-2.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-3.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-38.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-70.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-28.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-71.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-72.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-73.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-74.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-75.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-43.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-44.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-45.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-46.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-67.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+        </div>
+        <div className='slide-track-2 flex-row gap-2 bg-transparent flex'>
+          <img
+            src='icons/company-20.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-21.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-22.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-23.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-24.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-25.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-26.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-27.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-28.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-29.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-30.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-31.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-32.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-33.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-34.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-35.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-36.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-37.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-38.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-39.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-40.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-41.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-43.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-44.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-45.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-46.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-67.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-68.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-69.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-70.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-47.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-48.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-49.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-50.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-51.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-52.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-53.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-54.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-55.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-56.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+        </div>
+        <div className='slide-track-3  flex-row gap-2 bg-transparent flex'>
+          <img
+            src='icons/company-1.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-2.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-3.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-38.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-39.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-40.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-4.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-5.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-6.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-7.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-8.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-9.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-10.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-11.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-12.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-13.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-14.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-34.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-35.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-36.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-37.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-38.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-16.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-17.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-18.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+          <img
+            src='icons/company-19.png'
+            className='w-[117px] h-[105.46px] rounded-xl'
+          />
+        </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
+      <div className='m-auto flex justify-center gap-2 text-xs px-4 py-8'>
         <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
+          href='https://hyperlinkschool.com/privacy'
+          target='_blank'>
+          Privacy
         </a>
-
+        <span>|</span>
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
+          href='https://hyperlinkschool.com/tc'
+          target='_blank'>
+          T&C
         </a>
       </div>
-    </main>
-  )
-}
+    </>
+  );
+};
+
+export default index;
