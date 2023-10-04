@@ -13,7 +13,7 @@ const index = () => {
         />
         <meta
           name='description'
-          content='Switch to High Paying IT Jobs, Learn the High Paying Skills of Tomorrow! No Software/IT background required'
+          content='Switch to High Paying IT Job, Learn the High Paying Skills of Tomorrow! No Software/IT background required'
         />
         <link
           rel='canonical'
@@ -34,7 +34,7 @@ const index = () => {
         />
         <meta
           property='og:description'
-          content='Switch to High Paying IT Jobs, Learn the High Paying Skills of Tomorrow! No Software/IT background required'
+          content='Switch to High Paying IT Job, Learn the High Paying Skills of Tomorrow! No Software/IT background required'
         />
         <meta
           property='og:image'
@@ -55,7 +55,7 @@ const index = () => {
         />
         <meta
           property='twitter:description'
-          content='Switch to High Paying IT Jobs, Learn the High Paying Skills of Tomorrow! No Software/IT background required'
+          content='Switch to High Paying IT Job, Learn the High Paying Skills of Tomorrow! No Software/IT background required'
         />
         <meta
           property='twitter:image'
@@ -75,16 +75,20 @@ const index = () => {
       <section className='m-auto  max-w-6xl flex flex-col text-gray-700'>
         <Nav />
       </section>
-      <section className='bg-gradient-to-t from-blue-300  to-blue-100'>
+      <section className='bg-gradient-to-t from-blue-100 via-gray-50 to-gray-200'>
         <div className=' m-auto flex flex-col-reverse md:flex-row max-w-6xl w-full items-center p-4 pb-24 md:pt-20'>
           <div className='flex flex-col md:w-[50%] gap-5 mt-10 md:mt-0'>
             <div className='text-xs rounded-full font-bold bg-white border text-black  w-fit p-2 px-3'>
-              Switch to High Paying IT Jobs
+              Switch to High Paying IT Job
             </div>
+            {/* <div className='text-xs relative rounded-full font-bold bg-white border text-black  w-fit p-2.5 px-4'>
+              Switch to High Paying IT Job
+              <span class='absolute -top-0.5 left-6 animate-ping  inline-flex rounded-full h-2 w-2 bg-rose-500'></span>
+            </div> */}
             <h2 className='text-4xl font-bold text-blue-600 leading-snug	'>
               Learn the High Paying Skills of Tomorrow!
             </h2>
-            <p className='text-sm'>No Software/IT background required.</p>
+            <p className='text-sm'>No Software/IT background required</p>
 
             <a
               href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
@@ -135,15 +139,20 @@ const index = () => {
           </h2>
         </div>
         <section className='flex justify-around flex-wrap'>
-          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] p-4 mb-10'>
-            <img
-              src='app-icon.png'
-              className='w-32 mb-6'
-            />
-            <p className='text-lg font-extrabold'>APP DEVELOPMENT</p>
-            <div>Complete App Development Mastery with React Native</div>
-            <ul className='flex flex-col gap-1'>
-              <li>✓ 24+ modules</li>
+          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] mb-10'>
+            <div className='w-full bg-blue-50 rounded-t-xl flex flex-col p-4 mb-4'>
+              <img
+                src='app-icon.png'
+                className='w-32'
+              />
+            </div>
+
+            <p className='text-lg font-extrabold px-4'>APP DEVELOPMENT</p>
+            <div className='px-4'>
+              The Complete App Development Mastery (React Native)
+            </div>
+            <ul className='flex flex-col gap-1 px-4'>
+              <li>✓ 26+ modules</li>
               <li>✓ 3-4 months</li>
               <li>✓ 5+ Live projects</li>
               <li>✓ Andriod + iOS</li>
@@ -152,118 +161,148 @@ const index = () => {
             <a
               href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
               target='_blank'
-              className='border-t pt-3 text-blue-500 font-bold'>
+              className='border-t py-3 text-blue-500 font-bold px-4'>
               FREE MASTERCLASS
             </a>
           </div>
-          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] p-4 mb-10'>
-            <img
-              src='frontend-icon.png'
-              className='w-36 mb-6'
-            />
-            <p className='text-lg font-extrabold'>FRONTEND DEVELOPMENT</p>
-            <div>Complete App Development Mastery with React Native</div>
-            <ul className='flex flex-col gap-1'>
-              <li>✓ 24+ modules</li>
-              <li>✓ 3-4 months</li>
-              <li>✓ 5+ Live projects</li>
-              <li>✓ Andriod + iOS</li>
+
+          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] mb-10'>
+            <div className='w-full bg-blue-50 rounded-t-xl flex flex-col p-4 mb-5'>
+              <img
+                src='frontend-icon.png'
+                className='w-36'
+              />
+            </div>
+
+            <p className='text-lg font-extrabold px-4'>FRONTEND DEVELOPMENT</p>
+            <div className='px-4'>
+              The Complete Frontend Web Development Mastery (React Js)
+            </div>
+            <ul className='flex flex-col gap-1 px-4'>
+              <li>✓ 34+ modules</li>
+              <li>✓ 4 months</li>
+              <li>✓ 3+ Web Projects</li>
+              <li>✓ HTML + CSS + JS + React + API</li>
               <li>✓ Job guarantee</li>
             </ul>
             <a
               href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
               target='_blank'
-              className='border-t pt-3 font-bold  text-blue-500'>
+              className='border-t py-3 text-blue-500 font-bold px-4'>
               FREE MASTERCLASS
             </a>
           </div>
-          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] p-4 mb-10'>
-            <img
-              src='backend-icon.png'
-              className='w-36 mb-6'
-            />
-            <p className='text-lg font-extrabold'>BACKEND DEVELOPMENT</p>
-            <div>Complete App Development Mastery with React Native</div>
-            <ul className='flex flex-col gap-1'>
-              <li>✓ 24+ modules</li>
-              <li>✓ 3-4 months</li>
-              <li>✓ 5+ Live projects</li>
-              <li>✓ Andriod + iOS</li>
+
+          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] mb-10'>
+            <div className='w-full bg-blue-50 rounded-t-xl flex flex-col p-4 mb-5'>
+              <img
+                src='backend-icon.png'
+                className='w-36'
+              />
+            </div>
+
+            <p className='text-lg font-extrabold px-4'>BACKEND DEVELOPMENT</p>
+            <div className='px-4'>
+              The Complete Backend Web Development Mastery (Node Js)
+            </div>
+            <ul className='flex flex-col gap-1 px-4'>
+              <li>✓ 20+ modules</li>
+              <li>✓ 4 months</li>
+              <li>✓ 2 REST API</li>
+              <li>✓ Node + Express + DB + REST API</li>
               <li>✓ Job guarantee</li>
             </ul>
             <a
               href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
               target='_blank'
-              className='border-t pt-3 text-blue-500 font-bold'>
+              className='border-t py-3 text-blue-500 font-bold px-4'>
               FREE MASTERCLASS
             </a>
           </div>
-          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] p-4 mb-10'>
-            <img
-              src='mern-icon.png'
-              className='w-52 mb-6'
-            />
-            <p className='text-lg font-extrabold'>FULl STACK DEVELOPMENT</p>
-            <div>Complete App Development Mastery with React Native</div>
-            <ul className='flex flex-col gap-1'>
-              <li>✓ 24+ modules</li>
-              <li>✓ 3-4 months</li>
-              <li>✓ 5+ Live projects</li>
-              <li>✓ Andriod + iOS</li>
+
+          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] mb-10'>
+            <div className='w-full bg-blue-50 rounded-t-xl flex flex-col p-4 mb-4'>
+              <img
+                src='mern-icon.png'
+                className='w-52'
+              />
+            </div>
+
+            <p className='text-lg font-extrabold px-4'>
+              FULl STACK WEB DEVELOPMENT
+            </p>
+            <div className='px-4'>
+              The Complete Web Development Mastery (MERN Stack)
+            </div>
+            <ul className='flex flex-col gap-1 px-4'>
+              <li>✓ 60+ modules</li>
+              <li>✓ 6-8 months</li>
+              <li>✓ 6+ Live projects</li>
+              <li>✓ MongDB + Expeess + Ract + Node</li>
               <li>✓ Job guarantee</li>
             </ul>
             <a
               href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
               target='_blank'
-              className='border-t pt-3 text-blue-500 font-bold'>
+              className='border-t py-3 text-blue-500 font-bold px-4'>
               FREE MASTERCLASS
             </a>
           </div>
-          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] p-4 mb-10'>
-            <img
-              src='wp-icon.png'
-              className='w-32 mb-6'
-            />
-            <p className='text-lg font-extrabold'>WORDPRESS DEVELOPMENT</p>
-            <div>Complete App Development Mastery with React Native</div>
-            <ul className='flex flex-col gap-1'>
-              <li>✓ 24+ modules</li>
-              <li>✓ 3-4 months</li>
-              <li>✓ 5+ Live projects</li>
-              <li>✓ Andriod + iOS</li>
-              <li>✓ Job guarantee</li>
+          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] mb-10'>
+            <div className='w-full bg-blue-50 rounded-t-xl flex flex-col p-4 mb-4'>
+              <img
+                src='wp-icon.png'
+                className='w-32'
+              />
+            </div>
+
+            <p className='text-lg font-extrabold px-4'>WORDPRESS DEVELOPMENT</p>
+            <div className='px-4'>
+              The Complete WordPress Web Development Mastery
+            </div>
+            <ul className='flex flex-col gap-1 px-4'>
+              <li>✓ 20+ modules</li>
+              <li>✓ 3 months</li>
+              <li>✓ 3+ Live projects</li>
+              <li>✓ FREE theme + Hosting</li>
+              <li>✓ Job assistance</li>
             </ul>
             <a
               href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
               target='_blank'
-              className='border-t pt-3 text-blue-500 font-bold'>
+              className='border-t py-3 text-blue-500 font-bold px-4'>
               FREE MASTERCLASS
             </a>
           </div>
-          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] p-4 mb-10'>
-            <img
-              src='dm-icon.png'
-              className='w-36 mb-6'
-            />
-            <p className='text-lg font-extrabold'>DIGITAL MARKETING</p>
-            <div>Complete App Development Mastery with React Native</div>
-            <ul className='flex flex-col gap-1'>
+          <div className=' flex flex-col gap-4 border shadow-md hover:shadow-lg rounded-2xl max-w-[350px] mb-10'>
+            <div className='w-full bg-blue-50 rounded-t-xl flex flex-col p-4 mb-4'>
+              <img
+                src='dm-icon.png'
+                className='w-36'
+              />
+            </div>
+
+            <p className='text-lg font-extrabold px-4'>DIGITAL MARKETING</p>
+            <div className='px-4'>
+              The Digital Marketing Mastery Course - 2023 updated
+            </div>
+            <ul className='flex flex-col gap-1 px-4'>
               <li>✓ 24+ modules</li>
               <li>✓ 3-4 months</li>
-              <li>✓ 5+ Live projects</li>
-              <li>✓ Andriod + iOS</li>
+              <li>✓ Your personal blog</li>
+              <li>✓ Dual certificate</li>
               <li>✓ Job guarantee</li>
             </ul>
             <a
               href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
               target='_blank'
-              className='border-t pt-3 text-blue-500 font-bold'>
+              className='border-t py-3 text-blue-500 font-bold px-4'>
               FREE MASTERCLASS
             </a>
           </div>
         </section>
 
-        <section className='flex flex-col md:flex-row  w-full items-center border border-blue-500 shadow-md rounded-xl my-10'>
+        <section className='flex flex-col md:flex-row  w-full items-center border bg-blue-50 border-blue-500 shadow-md rounded-xl my-10'>
           <div className='flex items-center w-full  p-4'>
             <img src='free-masterclass.png' />
           </div>
@@ -273,9 +312,9 @@ const index = () => {
               className='w-40'
             />
             <h2 className='text-2xl font-bold leading-snug	'>
-              Attend FREE MASTERCLASS and Learn Core Concepts Hours
+              Attend FREE MASTERCLASS and Learn core concepts in 1 hour
             </h2>
-            <p className='text-sm'>We run free masterclass's every Sunday!</p>
+            <p className='text-sm'>We run free masterclass every Sunday!</p>
 
             <a
               href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
@@ -290,7 +329,7 @@ const index = () => {
           </div>
         </section>
 
-        <section className='flex flex-col md:flex-row w-full items-center my-10'>
+        <section className='flex flex-col md:flex-row w-full shadow-sm border items-center my-10 rounded-xl'>
           <div className='flex items-center w-full  p-4'>
             <img
               src='hsrp.png'
@@ -300,7 +339,7 @@ const index = () => {
           <div className='flex flex-col w-full gap-6 p-6'>
             <img
               src='icon.png'
-              className='hidden md:block md:w-20'
+              className='hidden md:block md:w-20 md:mb-6'
             />
             <h2 className='text-2xl font-bold leading-snug	'>
               100% Job Guarantee, Otherwise 100% Money Back
@@ -321,7 +360,7 @@ const index = () => {
               href='hyperlink-school-technical-courses-refund-policy.pdf'
               target='_blank'
               className='underline text-xs'>
-              View Refund Pocliy
+              View Hyperlink School's Refund Pocliy
             </a>
           </div>
         </section>
@@ -333,13 +372,12 @@ const index = () => {
             Take a first step toward your dream career today!
           </div>
           <p className='max-w-lg text-center'>
-            Add skills that are valued globally and Switch to High Paying IT
-            Jobs
+            Add skills that are valued globally and switch to high paying IT Job
           </p>
           <a
             href='https://whatsapp.com/channel/0029Va9ULh6C1FuLWKmx1E1n'
             target='_blank'
-            className=' cursor-pointer w-fit font-bold gap-1  rounded-full border bg-white p-1.5 px-4 text-black '>
+            className=' cursor-pointer w-fit font-semibold gap-1  text-sm rounded-full border bg-white p-2 px-5 text-blue-500 '>
             JOIN FREE MASTERCLASS
           </a>
         </div>
