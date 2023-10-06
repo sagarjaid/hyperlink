@@ -18,7 +18,7 @@ const Footer = () => {
       <a
         href='https://hyperlinkschool.com/tc'
         target='_blank'>
-        tearm & conditions
+        terms & conditions
       </a>
     </div>
   );
