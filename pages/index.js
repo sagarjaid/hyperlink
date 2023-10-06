@@ -772,17 +772,23 @@ const index = () => {
         </div>
       </div>
 
-      <div className='m-auto flex justify-center gap-2 text-xs px-4 py-8'>
+      <div className='flex justify-center gap-2 text-xs px-4 py-8'>
+        <a
+          href='https://hyperlinkschool.com/'
+          target='_blank'>
+          hyperlink school
+        </a>
+        <span>|</span>
         <a
           href='https://hyperlinkschool.com/privacy'
           target='_blank'>
-          Privacy
+          privacy
         </a>
         <span>|</span>
         <a
           href='https://hyperlinkschool.com/tc'
           target='_blank'>
-          T&C
+          tearm & conditions
         </a>
       </div>
     </>
