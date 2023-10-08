@@ -7,7 +7,7 @@ const TC = () => {
   return (
     <>
       <SEOMeta
-        title='Shipping Policy — Hyperlink School'
+        title='Refund Policy — Hyperlink School'
         description='Switch to High Paying IT Jobs, Learn the High Paying Skills of Tomorrow! No Software/IT background required'
         slug='tc'
       />
